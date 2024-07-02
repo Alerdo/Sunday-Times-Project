@@ -1,22 +1,79 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>The Times & Sunday Times</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Times & Sunday Times Election Data Visualization</title>
+    <meta name="description" content="Election Data Visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+<style>
+    body {
+        background-color: lightcyan;
+    }
+
+    h3 {
+        font-size: 20px;
+        padding-bottom: 0px !important;
+        padding-left: 80px;
+    }
+</style>
+    
+</head>
+<body>
+                <div class="col-md-12">
+                <h1 class="text-center" style="text-decoration: underline;">The Times & Sunday Times Election Data</h1>
+                <p class="text-center">Visualizing the projected results by parliamentary constituency.</p>
+            </div>
+
+    <!-- Main Container -->
+    <div class="container mt-5">
+        <div class="row">
+
+        </div>
         
-        <script src="" async defer></script>
-    </body>
+        <!-- Bar Chart Section -->
+       
+        <!-- Pie Chart Section -->
+        <div class="row mt-12">
+            
+            <div class="col-md-12">
+                <h3 style="padding-left: 0;">Overall Vote Share by Party</h3>
+                <p>Labour leads with 38.7% of the total votes, making it the most popular party in this election. Conservatives and Reform each have 15.5%, showing substantial support. The Liberal Democrats secured 11.7%, while the Green Party has 6.7%. The Scottish National Party (SNP) garnered 3.1%, with Plaid Cymru and others receiving 0.7% and 1.9% respectively.</p>
+                <div id="pieChart" style="  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; justify-content: flex-start;"></div>
+            </div>
+            <!-- <div class="col-md-6">
+                <h5>Explanation:</h5>
+                <p>This pie chart illustrates the proportion of votes received by each party. It offers an overview of the overall voter preference in the election.</p>
+            </div> -->
+        </div>
+
+        <div class="row mt-5" style="display: flex; align-items: center;">
+            <div class="col-md-6">
+                <h3>Number of Constituencies Won by  Party</h3>
+                <div id="barChart" style="margin-left: 60px;"></div>
+            </div>
+            <div class="col-md-6">
+                The Labour Party has secured a significant majority with 425 constituencies, making it the dominant party in this election. The Conservatives follow with 108 constituencies, which is significantly fewer than Labour, indicating a major shift in voter preference compared to previous elections. The Liberal Democrats have won 67 constituencies, showing a notable presence but still far behind Labour and Conservatives. The Scottish National Party has secured 20 constituencies, reflecting its stronghold in Scotland. Reform has won 5 constituencies, and Plaid Cymru has won 4, indicating limited but specific regional support. The Green Party has secured 2 constituencies, showing a small yet significant presence.
+                
+                </div>
+        </div>
+
+
+        <!-- Heatmap Section -->
+        <div class="row mt-5" style="display: flex; align-items: center;">
+            <div class="col-md-6">
+                <h3>Correlation of parties with different regions</h3>
+                <div id="heatMap"></div>
+            </div>
+            <div class="col-md-6">
+                <p>This heatmap visualizes the correlation of different political parties with various regions. Focusing on the Labour Party, we can observe that it has the highest correlation in regions such as Yorkshire and The Humber, London, North West, and North East, all showing a correlation of 0.5. This indicates that Labour has a strong presence and significant support in these regions. On the other hand, Labour has a moderate correlation in regions like West Midlands and East Midlands, with a correlation of 0.4. The data suggests that the Labour Party's influence is more pronounced in certain regions, which could be strategic areas for their campaign focus.</p>            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
 </html>
