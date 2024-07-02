@@ -1,11 +1,17 @@
 # Election Data Visualization Project
 
+## Live Project
 
+You can view the live project [here](https://alerdo.github.io/Sunday-Times-Project/).
+
+## Tools and Techniques
+
+While my strongest visualization tool is PowerBI, which would have allowed me to create more sophisticated visualizations, I chose to use D3 for this project as it aligns with the job requirements.
 
 ## About the Data
 
 I really enjoyed working with the data as politics is something I am deeply interested in. 
-To ensure the accuracy and reliability of the data, I conducted a thorough data cleaning process, including verifying the data for any inaccuracies and removing duplicates. Additionally, I standardized the column names for consistency and clarity.
+To ensure the accuracy and reliability of the data, I conducted a thorough data cleaning process leveraging libraries like Pandas(python) in JupyterNotebook, including verifying the data for any inaccuracies and removing duplicates. Additionally, I standardized the column names for consistency and clarity and done extra analysis.
 
 ## Visualizations
 
@@ -25,9 +31,6 @@ I tried to add a colored map of the result, however I was missing the geoson fil
 - **Regional Analysis**: Detailed analysis of results by region.
 - **Socio-Economic Factors**: Examining the impact of socio-economic factors on the election results and illustrating these comparisons with charts.
 
-## Tools and Techniques
-
-While my strongest visualization tool is PowerBI, which would have allowed me to create more sophisticated visualizations, I chose to use D3 for this project as it aligns with the job requirements. This experience has allowed me to demonstrate my versatility and willingness to adapt to different tools and technologies.
 
 ## Conclusion
 
